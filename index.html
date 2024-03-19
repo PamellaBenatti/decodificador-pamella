@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <me ta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Decodificador Pamella</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/a5526f0a9a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <bg-image src="./background.png"></bg-image>
+    <header class="cabecalho">
+        <a href="https://www.alura.com.br/"><img src="./Logo.png" alt="Logo da Alura"></a>
+    </header>
+    <main class="main">
+        <section class="receberTexto">
+            <h3 class="receberTexto__instrucao">Digite seu texto com apenas letras mínusculas e sem acento:</h3>
+            <div class="receberTexto__quadro">
+                <textarea id="input-texto"></textarea>
+            </div>
+            <div class="botoes">
+                    <button onclick="criptografar()" id="botao-cripto">Criptografar</button>
+                    <button onclick="descriptografar()" id="botao-descripto">Descriptografar</button>
+            </div>
+        </section>
+        <section class="mostrarTexto">
+            <h2 class="mostrarTexto__titulo">Resultado:</h2>
+            <div class="mostrarTexto__quadro" id="output">
+                <span>Seu texto aparecerá aqui.</span>    
+            </div>
+            <button onclick="copiar()" class="botoes__botaoCopiar" id="botao-copiar" type="button">Copiar</button> 
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Pamella Benatti - 2024</p>
+        <section class="icones">
+            <a class="icones__icon" href="https://www.linkedin.com/in/pamella-benatti-53ab1b114/"><i class="fa-brands fa-linkedin"></i></a>
+            <a class="icones__icon" href="https://github.com/PamellaBenatti"><i class="fa-brands fa-github"></i></a>
+        </section>
+    </footer>
+</body>
+</html>

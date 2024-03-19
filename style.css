@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap');
+
+:root {
+    --cor-texto: #f8fbca;
+    --cor-titulo: #bec092;
+    --cor-clara: #86895d;
+    --cor-media: #54582f;
+    --cor-escura: #272b00;
+    --cor-preta: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans Mono";
+}
+
+body {
+    box-sizing: border-box;
+    background-image: url("./background.png");
+}
+
+.cabecalho {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+}
+
+.cabecalho img {
+    max-width: 150px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    background-color: var(--cor-clara);
+    border: 5px dotted var(--cor-media);
+    border-radius: 8px;
+    cursor: pointer;
+}
+ 
+.cabecalho img:hover {
+    background-color: var(--cor-media);
+    border: 5px dotted var(--cor-clara);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    margin: 0 auto;
+    grid-auto-rows: auto;
+    align-items: center;
+}
+
+.receberTexto {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;    
+    gap: 20px;
+    padding: 2%;
+}
+
+.receberTexto__instrucao {
+    text-align: center;
+    color: var(--cor-titulo);
+}
+
+#input-texto {
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    font-size: 20px;
+    color: var(--cor-texto);
+    background: var(--cor-escura);
+    border: 5px dotted var(--cor-preta);
+    border-radius: 8px;
+    text-transform: lowercase;
+}
+
+.mostrarTexto {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 2%;
+}
+
+.mostrarTexto__titulo {
+    text-align: center;
+    color: var(--cor-titulo);
+}
+
+#output {
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    font-size: 20px;
+    color: var(--cor-texto);
+    background: var(--cor-escura);
+    border: 5px dotted var(--cor-preta);
+    border-radius: 8px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    gap: 4%;
+}
+
+#botao-cripto {
+    color: var(--cor-texto);
+    background-color: var(--cor-clara);
+    border: 5px dotted var(--cor-media);
+    border-radius: 8px;
+    width: 180px;
+    height: 60px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#botao-descripto {
+    color: var(--cor-texto);
+    background-color: var(--cor-clara);
+    border: 5px dotted var(--cor-media);
+    border-radius: 8px;
+    width: 180px;
+    height: 60px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#botao-copiar {
+    color: var(--cor-texto);
+    background-color: var(--cor-clara);
+    border: 5px dotted var(--cor-media);
+    border-radius: 8px;
+    width: 180px;
+    height: 60px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#botao-cripto:hover {
+    color: var(--cor-titulo);
+    background-color: var(--cor-media);
+    border: 5px dotted var(--cor-clara);
+    border-radius: 8px;
+    width: 180px;
+    height: 60px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#botao-descripto:hover {
+    color: var(--cor-titulo);
+    background-color: var(--cor-media);
+    border: 5px dotted var(--cor-clara);
+    border-radius: 8px;
+    width: 180px;
+    height: 60px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#botao-copiar:hover {
+    color: var(--cor-titulo);
+    background-color: var(--cor-media);
+    border: 5px dotted var(--cor-clara);
+    border-radius: 8px;
+    width: 180px;
+    height: 60px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-titulo);
+    background-color: var(--cor-escura);
+    border: 5px dotted var(--cor-preta);
+    border-radius: 8px;
+    height: 60px;
+    font-size: 20px;
+    padding: 0,5%;
+    margin-top: 20px;
+}
+
+.icones__icon {
+    color: var(--cor-titulo);
+}
